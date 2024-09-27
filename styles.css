@@ -4,32 +4,40 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
-    color:rgb(255, 255, 0);
+    background-color: rgb(95, 95, 95);
+    color:yellow;
 }
 
 /* Style the navbar */
 #navbar {
+    float: center;
     position: sticky;
     top: 0;
     overflow: hidden;
     background-color: darkslategray;
 }
-
+#navbar li {
+    list-style-type: none;
+}
 /* Navbar links */
 #navbar a {
     float: left;
     display: block;
+    position: relative;
     color: yellowgreen;
     text-align: center;
     padding: 14px;
     text-decoration: none;
 }
 #navbar a:hover, a:active {
-    background-color: gray;
+    background-color: rgb(95, 95, 95);
 }
 
 /* Page content */
 .content {
     padding: 16px;
+}
+
+h1, h3 {
+    color: rgb(170, 255, 0);
 }
