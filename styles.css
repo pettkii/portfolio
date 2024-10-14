@@ -53,3 +53,32 @@ div#navbar ul li {
 h1, h3 {
     color: rgb(170, 255, 0);
 }
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.formcontainer button {
+    background-color: darkslategray;
+    color:  yellowgreen;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.formcontainer button:hover, button:active {
+    background-color: rgb(32, 54, 54);
+    color: rgb(170, 255, 0);
+}
+.formcontainer {
+    width: 50%;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 20px;
+}
