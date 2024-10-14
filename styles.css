@@ -47,13 +47,14 @@ div#navbar ul li {
 
 /* Page content */
 .content {
-    padding: 16px;
+    padding: 16px 18% 16px 18%;
 }
 
 h1, h3 {
     color: rgb(170, 255, 0);
 }
 
+/* Contact Form */
 input[type=text], textarea {
     width: 100%;
     padding: 12px;
