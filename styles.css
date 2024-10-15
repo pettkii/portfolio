@@ -8,7 +8,8 @@ body {
     /* left to right from dark to light */
     background: rgb(32,54,54);
     background: linear-gradient(90deg, rgba(32,54,54,1) 0%, rgba(95,95,95,1) 100%);
-    color:yellow;
+    color: yellow;
+    /* color:#81B558; */
 }
 
 /* Style the navbar */
@@ -55,7 +56,8 @@ div#navbar ul li {
 }
 
 h1, h3 {
-    color: rgb(170, 255, 0);
+    color: #81b558;
+    /* color: rgb(170, 255, 0); */
 }
 
 /* Contact Form */
