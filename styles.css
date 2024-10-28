@@ -48,7 +48,10 @@ div#navbar ul li {
     background-color: rgb(32, 54, 54);
     color: rgb(170, 255, 0);
 }
-
+/* Links */
+a {
+    color: yellow;
+}
 /* Page content */
 .content {
 
