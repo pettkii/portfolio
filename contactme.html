@@ -51,7 +51,7 @@
     </div>
     <script>
         // form element
-        const form = document.getElementByID('contactform');
+        const form = document.getElementById('contactform');
         // form submit event listener
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // prevent form submission
@@ -61,6 +61,7 @@
             const snimi = form.elements.lname.value;
             const email = form.elements.email.value;
             const message = form.elements.message.value;
+            console.log(`Etunimi: ${enimi}, Sukunimi: ${snimi}, Email: ${email}, Message: ${message}`);
         });
     </script>
 </body>
