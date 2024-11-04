@@ -60,8 +60,11 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+}
+.grid-child bottom {
+    grid-column: 1 / 2;
 }
 
 h1, h3 {
@@ -93,7 +96,7 @@ input[type=text], textarea {
     color: rgb(170, 255, 0);
 }
 .formcontainer {
-    width: 50%;
+    width: 75%;
     border-radius: 5px;
     background-color: cadetblue;
     padding: 20px;
