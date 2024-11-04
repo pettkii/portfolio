@@ -58,6 +58,12 @@ a {
     padding: 16px 18% 16px 18%;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 20px;
+}
+
 h1, h3 {
     color: #81b558;
     /* color: rgb(170, 255, 0); */
