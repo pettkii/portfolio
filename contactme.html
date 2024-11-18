@@ -49,17 +49,17 @@
                 <div class="formcontainer">
                     <form id="contactform" action="">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
                         <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Your email...">
+                        <input type="text" id="email" name="email" placeholder="Your email..." required>
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Your message..."></textarea>
+                        <textarea id="message" name="message" placeholder="Your message..." required minlength="5"></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-        </div>        
+        </div>
         </div>
     </div>
     <script>
@@ -75,6 +75,16 @@
             const email = form.elements.email.value;
             const message = form.elements.message.value;
             console.log(`Etunimi: ${enimi}, Sukunimi: ${snimi}, Email: ${email}, Message: ${message}`);
+        });
+        // form textarea message length validation
+        const messagetext = document.getElementById('message');
+        messagetext.addEventListener('input', function(event) {
+            if (messagetext.validity.tooShort) {
+                messagetext.setCustomValidity('Your message is too short!');
+            } else {
+                messagetext.setCustomValidity('');
+            }
+
         });
     </script>
 </body>
